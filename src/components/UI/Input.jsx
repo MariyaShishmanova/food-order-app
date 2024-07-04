@@ -6,7 +6,7 @@ export default function Input({ label, id, ...props }) {
       <label htmlFor="id">
         {label}
       </label>
-      <input id="id" name={id} required />
+      <input id="id" name={id} required {...props} />
     </p>
   );
 }
